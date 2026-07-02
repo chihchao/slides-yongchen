@@ -10,3 +10,7 @@ node_modules/
 
 # macOS
 .DS_Store
+
+# Template folder contents (keep folder, ignore contents)
+slides/_template/*
+!slides/_template/.gitkeep

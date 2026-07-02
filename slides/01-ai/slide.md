@@ -1,136 +1,13 @@
 ---
 marp: true
-theme: gaia
+theme: gaia-cust
 title: 認識人工智慧
 size: 16:9
 paginate: true
-style: |
-    :root {
-        --color-background: #fff;
-        --color-foreground: #333;
-        --color-highlight: #69f;
-        --color-dimmed: #888;
-    }
-    section p, li {
-        font-size: 0.9em;
-    }
-    section th, td {
-        font-size: 0.9em;
-    }
-    section.pattern h3 {
-        font-size: 1.2em;
-    }
-    section.pattern p, li {
-        font-size: 0.8em;
-    }
-    section.pattern {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        align-items: center;
-    }
-    section.pattern img {
-        max-width: 100%;
-        max-height: 70vh;
-        border-radius: 8px;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-    }
-    section.compare {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        align-items: start;
-    }
-    section.compare h3 {
-        font-size: 1.0em;
-        margin-bottom: 0.3em;
-    }
-    section.compare p, li {
-        font-size: 0.75em;
-    }
-    section.px-pt {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 56px 30px;
-        gap: 16px;
-        background: #fff !important;
-        color: #1e293b;
-    }
-    section.px-pt h2 {
-        font-size: 1.1em;
-        font-weight: bold;
-        border-left: 5px solid #4a9eff;
-        padding-left: 14px;
-        margin: 0;
-        color: #1e293b;
-    }
-    section.px-pt .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        flex: 1;
-    }
-    section.px-pt .card {
-        background: #f1f5f9;
-        border-radius: 14px;
-        padding: 20px 24px;
-        border: 1px solid #e2e8f0;
-    }
-    section.px-pt .card-title {
-        font-size: 0.95em;
-        font-weight: bold;
-        color: #1e293b;
-        margin-bottom: 6px;
-    }
-    section.px-pt .card-desc {
-        font-size: 0.7em;
-        color: #64748b;
-        margin: 0 0 10px 0;
-    }
-    section.px-pt .card ul {
-        font-size: 0.7em;
-        color: #475569;
-        padding-left: 16px;
-        margin: 0;
-    }
-    section.px-pt .card li {
-        margin-bottom: 5px;
-        line-height: 1.45;
-    }
-    section.px-pt .formula-row {
-        display: flex;
-        align-items: center;
-        background: #f1f5f9;
-        border: 1px solid #e2e8f0;
-        border-radius: 10px;
-        padding: 14px 20px;
-        gap: 20px;
-    }
-    section.px-pt .formula-label {
-        font-size: 0.72em;
-        font-weight: bold;
-        color: #475569;
-        white-space: nowrap;
-    }
-    section.px-pt .formula-items {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        flex: 1;
-    }
-    section.px-pt .fi-label {
-        font-size: 0.62em;
-        color: #94a3b8;
-        margin-bottom: 2px;
-    }
-    section.px-pt .fi-value {
-        font-size: 0.82em;
-        font-weight: bold;
-        color: #1e293b;
-    }
+transition: slide
 ---
 
-<!-- _class: lead -->
+<!-- _class: cover -->
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
@@ -191,7 +68,7 @@ section th, td { font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ## 認識人工智慧
 
@@ -244,25 +121,25 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ![w:700](assets/01-img010.png)
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ![w:700](assets/01-img011.png)
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ![w:700](assets/01-img012.png)
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ![w:700](assets/01-img013.png)
 
@@ -343,7 +220,7 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ## 為什麼人工智慧到近年才爆紅？
 
@@ -370,7 +247,7 @@ section p { text-align: center; font-size: 0.7em; }
 ---
 
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 大數據
 
@@ -393,7 +270,7 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 運算力
 
@@ -582,7 +459,7 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 演算法
 
@@ -590,19 +467,19 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ![w:450](assets/01-img060.png)
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 什麼是ChatGPT？
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 大型語言模型（LLM）
 ### Large Language Model
@@ -629,7 +506,7 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 生成式 AI 怎麼產生內容？
 
@@ -722,7 +599,7 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 大型語言模型的先天缺陷
 
@@ -910,7 +787,7 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 正在竄起的 AI Agent
 
@@ -944,7 +821,7 @@ section p { text-align: center; font-size: 0.7em; }
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section-page -->
 
 ### 準備好了嗎？上車囉～
 

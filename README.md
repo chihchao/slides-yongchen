@@ -25,6 +25,7 @@ themes/
 marp: true
 title: 簡報標題      # 會顯示在首頁清單
 paginate: true
+transition: slide   # 投影片切換效果，僅在 HTML 輸出／預覽時有效（PDF、PPTX 不支援）
 ---
 ```
 
@@ -48,10 +49,11 @@ paginate: true
 
 | `_class` | 說明 | 必要元素 |
 |---|---|---|
-| （省略）| 標準內容頁 | `# 標題` + `<hr>` + 內文 |
+| （省略）| 標準內容頁 | `### 標題` + `<hr>` + 內文 |
 | `cover` | 封面 | `# 主標題` + `## 副標題` + `<hr>` + 說明 |
-| `section-page` | 章節標題頁 | `<span class="num">01</span>` + `# 標題` |
+| `section-page` | 章節標題頁 | `<span class="num">01</span>` + `## 標題` |
 | `cols` | 兩欄比較 | `<div class="col-wrap">` 包覆兩個 `<div class="col">` |
+| `quad` | 四欄重點 | `<div class="quad-wrap">` 包覆四個 `<div class="item">` |
 | `stats` | 數據卡片 | `<div class="stat-wrap">` 包覆多個 `<div class="stat">` |
 | `closing` | 結尾頁 | `# 標題` + `<hr>` + 聯絡資訊 |
 
