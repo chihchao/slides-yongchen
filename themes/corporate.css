@@ -48,8 +48,9 @@ section::before {
 /* page number */
 section::after {
   font-family: var(--font);
-  font-size: 0.3143em;
+  font-size: 0.5em;
   color: var(--muted);
+  padding: 0 20px 16px 0;
 }
 
 /* ── Typography ─────────────────────────────────────────────── */
@@ -94,14 +95,14 @@ h4 {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--text);
   line-height: 1.65;
   margin: 0 0 10px;
 }
 
 ul, ol {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--text);
   line-height: 1.7;
   /* inside position + padding matching h3's border(5px) + padding(14px) so
@@ -131,7 +132,7 @@ blockquote {
 }
 
 blockquote p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.65;
   margin: 0;
   color: var(--text);
@@ -140,7 +141,7 @@ blockquote p {
 blockquote > p:first-child strong {
   /* markdown emits "**重點**<br>text" inside one <p>; the <br> already
      provides the line break, so this must stay inline or the break doubles up */
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--navy);
 }
 
@@ -149,7 +150,7 @@ blockquote > p:first-child strong {
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 thead tr  { background: var(--navy); }
@@ -178,7 +179,7 @@ code {
   color: var(--navy);
   padding: 2px 6px;
   border-radius: 3px;
-  font-size: .88em;
+  font-size: .8em;
 }
 
 pre {
@@ -230,9 +231,57 @@ section.cover hr {
 }
 
 section.cover p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--muted);
   margin-bottom: 4px;
+}
+
+/* ── Slide type: lead (Marp gaia 內建置中版面) ───────────────────
+   Usage:
+     <!-- _class: lead -->
+     # Title
+     ## Subtitle
+   Ports the official Marp gaia theme's `.lead` behaviour: flex
+   centering plus centered headings/paragraphs, with blockquote,
+   list-item and table alignment kept at gaia's defaults.
+   ─────────────────────────────────────────────────────────────── */
+
+section.lead {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+section.lead h1,
+section.lead h2,
+section.lead h3,
+section.lead h4,
+section.lead h5,
+section.lead h6,
+section.lead p {
+  text-align: center;
+  border-left: none;
+}
+
+section.lead blockquote > h1,
+section.lead blockquote > h2,
+section.lead blockquote > h3,
+section.lead blockquote > h4,
+section.lead blockquote > h5,
+section.lead blockquote > h6,
+section.lead blockquote > p {
+  text-align: left;
+}
+
+section.lead ul > li > p,
+section.lead ol > li > p {
+  text-align: left;
+}
+
+section.lead table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ── Slide type: section-page ───────────────────────────────────
@@ -270,7 +319,7 @@ section.section-page hr {
 }
 
 section.section-page p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--muted);
   position: relative;
   z-index: 2;
@@ -353,21 +402,21 @@ section.quad .quad-wrap {
 
 section.quad .item {
   background: var(--card);
-  border-left: 5px solid var(--navy);
+  border-left: none;
   padding: 14px 16px;
 }
 
 section.quad .item h4 {
-  font-size: 0.4em;
+  font-size: 1em;
   margin-bottom: 8px;
   padding-bottom: 6px;
   border-bottom: 1px solid var(--divider);
 }
 
-section.quad .item p { font-size: 0.34em; }
+section.quad .item p { font-size: 0.8em; }
 
 /* li's actual parent is <ul>, already scaled by the global ul rule, so this is relative to that */
-section.quad .item li { font-size: 0.85em; }
+section.quad .item li { font-size: 0.8em; }
 
 /* ── Slide type: stats (KPI cards) ─────────────────────────────
    Usage:
@@ -397,7 +446,7 @@ section.stats .stat.hi { background: var(--navy); }
 
 section.stats .stat .n {
   display: block;
-  font-size: 1.7143em;
+  font-size: 1.5em;
   font-weight: 700;
   color: var(--navy);
   line-height: 1;
@@ -415,11 +464,12 @@ section.stats .stat.hi hr { border-color: #3D5E9C; }
 
 section.stats .stat .l {
   display: block;
-  font-size: 0.3714em;
+  font-size: 0.8em;
   color: var(--muted);
 }
 
-section.stats .stat.hi .l { color: #8FACD8; }
+section.stats .stat.hi h4 { color: #ffffff; }
+section.stats .stat.hi p { color: #8FACD8; }
 
 /* ── Slide type: closing ────────────────────────────────────────
    Usage:
@@ -452,7 +502,7 @@ section.closing hr {
 }
 
 section.closing p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--muted);
   margin-bottom: 4px;
 }
